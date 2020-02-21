@@ -3,7 +3,7 @@ const menu = document.querySelector(".menu");
 const menu_items = document.querySelectorAll(".menu li");
 const linkless = document.querySelectorAll("a[href='#']")
 const header = document.querySelector("header");
-const slider = document.getElementById("carousel")
+const slider = document.getElementById("carousel");
 //Collapse menu for medium and small screens
 menu_btn.addEventListener('click', function(){
   if (menu.style.maxHeight){
@@ -23,22 +23,10 @@ linkless.forEach(function(item){
 
 //Fix header on scroll
 window.addEventListener('scroll', function(){
-  if (window.pageYOffset > slider.offsetTop + 200){
+  if (window.pageYOffset > 400){
     header.classList.add("stick")
   }
   else{
     header.classList.remove("stick")
   }
 })
-
-
-//Owl Carousel configs
-$(document).ready(function(){
-  $(".owl-carousel").owlCarousel({
-    items: 1,
-    loop: true,
-    autoplay: true,
-    autoplayHoverPause: true,
-    margin: 20,
-  });
-});

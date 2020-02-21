@@ -3,11 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Sixteen Clothing</title>
+  <link rel="stylesheet" href="css/layouts/nav.css">
   <link rel="stylesheet" href="https://cdn.lineicons.com/1.0.1/LineIcons.min.css">
-  <link rel="stylesheet" href="css/owl-carousel/owl.carousel.min.css">
-  <link rel="stylesheet" href="css/owl-carousel/owl.theme.default.min.css">
-  <link rel="stylesheet" href="css/layouts/home.css">
-  <title>Sixteen Clothing</title>
+  <link rel="stylesheet" href="css/layouts/products.css">
 </head>
 <body>
   <header>
@@ -16,8 +15,8 @@
         <h2>Sixteen <span>Clothing</span></h2>
         <div class="menu">
           <ul>
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="products.html">Our Products</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html" class="active">Our Products</a></li>
             <li><a href="about.html">About Us</a></li>
             <li><a href="contact.html">Contact Us</a></li>
           </ul>
@@ -30,40 +29,23 @@
       </div>
     </div>
   </header>
-  <section class="nopad">
-    <div class="owl-carousel">
-      <div class="carousel_item">
-        <img src="img/slide_01.jpg" alt="slide_01">
-        <div class="carousel_text">
-          <h4>Best Offer</h4>
-          <h1>New Arrivals on sale</h1>
-        </div>
-      </div>
-      <div class="carousel_item">
-        <img src="img/slide_02.jpg" alt="slide_02">
-        <div class="carousel_text">
-          <h4>flash deals</h4>
-          <h1>get your best products</h1>
-        </div>
-      </div>
-      <div class="carousel_item">
-        <img src="img/slide_03.jpg" alt="slide_03">
-        <div class="carousel_text">
-          <h4>last minute</h4>
-          <h1>grab last minute deals</h1>
-        </div>
-      </div>
+  <section class="nopad bg">
+    <div class="bg_text">
+      <h4>NEW ARRIVALS</h4>
+      <h1>SIXTEEN PRODUCTS</h1>
     </div>
   </section>
   <section>
     <div class="container">
-      <div class="block_title">
-        <h3>Latest Products </h3>
-        <a href="products.html">VIEW ALL PRODUCTS <i class="lni-chevron-right"></i></a>
-      </div>
-      <div class="block_body">
+      <div class="filter">
+        <div class="filter_title">
+          <button data-filter="all" class="active">All products</button>
+          <button data-filter="featured">Featured</button>
+          <button data-filter="flash">Flash deals</button>
+          <button data-filter="last">Last minute</button>
+        </div>
         <div class="products">
-          <div class="product">
+          <div class="product" data-sort="featured">
             <img src="img/product_01.jpg" alt="product_01">
             <div class="product_title">
               <a href="#">Title goes here</a>
@@ -83,7 +65,7 @@
               <p>Reviews (24)</p>
             </div>
           </div>
-          <div class="product">
+          <div class="product" data-sort="flash">
             <img src="img/product_02.jpg" alt="product_02">
             <div class="product_title">
               <a href="#">Title goes here</a>
@@ -103,7 +85,7 @@
               <p>Reviews (21)</p>
             </div>
           </div>
-          <div class="product">
+          <div class="product" data-sort="last">
             <img src="img/product_03.jpg" alt="product_03">
             <div class="product_title">
               <a href="#">Title goes here</a>
@@ -123,9 +105,7 @@
               <p>Reviews (36)</p>
             </div>
           </div>
-        </div>
-        <div class="products">
-          <div class="product">
+          <div class="product" data-sort="last">
             <img src="img/product_04.jpg" alt="product_04">
             <div class="product_title">
               <a href="#">Title goes here</a>
@@ -145,7 +125,7 @@
               <p>Reviews (48)</p>
             </div>
           </div>
-          <div class="product">
+          <div class="product" data-sort="flash">
             <img src="img/product_05.jpg" alt="product_05">
             <div class="product_title">
               <a href="#">Title goes here</a>
@@ -165,7 +145,7 @@
               <p>Reviews (16)</p>
             </div>
           </div>
-          <div class="product">
+          <div class="product" data-sort="featured">
             <img src="img/product_06.jpg" alt="product_06">
             <div class="product_title">
               <a href="#">Title goes here</a>
@@ -186,44 +166,24 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-  <section>
-    <div class="container">
-      <div class="block_title">
-        <h3>About Sixteen Clothing</h3>
-      </div>
-      <div class="block_body">
-        <div class="about_info">
-          <div class="info">
-            <p class="title">Looking for the best products?</p>
-            <p><a href="#">This template</a> is free to use for your business websites. However, you have no permission to redistribute the downloadable ZIP file on any template collection website. <a href="#">Contact us</a> for more info.</p>
-            <ul>
-              <li><a href="#">Lorem ipsum dolor sit amet</a></li>
-              <li><a href="#">Consectetur an adipisicing elit</a></li>
-              <li><a href="#">It aquecorporis nulla aspernatur</a></li>
-              <li><a href="#">Corporis, omnis doloremque</a></li>
-              <li><a href="#">Non cam id reprehenderit</a></li>
-            </ul>
-            <a href="#" class="read">Read More</a>
+        <div class="pagination">
+          <div class="page active">
+            <span>1</span>
           </div>
-          <img src="img/feature-image.jpg" alt="feature">
+          <div class="page">
+            <span>2</span>
+          </div>
+          <div class="page">
+            <span>3</span>
+          </div>
+          <div class="page">
+            <span>4</span>
+          </div>
+          <div class="page">
+            <span><i class="lni-angle-double-right"></i></span>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-  <section>
-    <div class="container">
-      <div class="block_title"></div>
-      <div class="purchase">
-        <div class="info">
-          <p class="title">Creative & Unique <strong>Sixteen</strong> Products</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque corporis amet elite author nulla.</p>
-        </div>
-        <a href="#">Purchase Now</a>
-      </div>
-      <div class="block_title"></div>
     </div>
   </section>
   <footer>
@@ -231,9 +191,7 @@
       <p>COPYRIGHT © 2020 SIXTEEN CLOTHING CO., LTD. - DESIGN: <a href="https://templatemo.com">TEMPLATEMO</a></p>
     </div>
   </footer>
-  <script src="js/jquery.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/owlconfig.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/products.js"></script>
 </body>
 </html>

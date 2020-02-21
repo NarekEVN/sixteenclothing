@@ -4,6 +4,8 @@ header{
   background: $dark;
   min-height: 80px;
   width: 100%;
+  position: absolute;
+  top: 0;
   transition: .5s ease;
   .content{
     @include flex(space-between);
@@ -69,9 +71,7 @@ header.stick{
   background: #fff;
   transition: .5s ease;
   position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
+  // top: 0;
   h2{
     color: $dark;
   }

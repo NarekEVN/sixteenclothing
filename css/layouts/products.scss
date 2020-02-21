@@ -1,0 +1,145 @@
+@import 'nav', 'footer', 'colors';
+
+.bg{
+  background-image: url('../../img/products-heading.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: 80%;
+  height: 400px;
+  width: 100%;
+  position: relative;
+  .bg_text{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    text-align: center;
+    h4{
+      font-size: 22px;
+      color: $red;
+    }
+    h1{
+      font-size: 50px;
+      color: #fff;
+      letter-spacing: 8px;
+      margin-top: -15px;
+    }
+  }
+}
+.filter_title{
+  @include flex(center);
+  border-bottom: 1px solid #EEEEEE;
+  button{
+    @include button(transparent, #000, 0);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif !important;
+    transition: .5s ease;
+    margin: 0 12px;
+    &:hover{
+      color: $red;
+    }
+    &:focus{
+      outline: 0;
+    }
+  }
+  button.active{
+    color: $red;
+  }
+}
+.products{
+  flex-wrap: wrap;
+  position: relative;
+  @include flex(center);
+  margin-top: 30px;
+  img{
+    width: 100%;
+  }
+  img ~ div{
+    padding: 0 20px;
+  }
+  .product{
+    flex: 1 1 30%;
+    margin: 15px 15px;
+    transition: .2s ease;
+    border: 1px solid #EEEEEE;
+    .product_title{
+      @include flex(space-between);
+      a{
+        text-decoration: none;
+        color: $blue;
+        font-weight: 500;
+        font-size: 18px;
+      }
+      h4{
+        font-weight: 500;
+        font-size: 18px;
+      }
+    }
+    .product_info{
+      p{
+        color: $lightgray;
+        font-size: 14px;
+      }
+    }
+    .product_raiting{
+      @include flex(space-between);
+      font-size: 14px;
+      color: $red;
+    }
+  }
+}
+
+.active_filter{
+  opacity: 1;
+  position: static;
+  transition: .2s ease;
+  z-index: 2;
+}
+.disabled_item{
+  transition: .2s ease;
+  opacity: 0;
+  position: absolute;
+  left: -1000%;
+  top: 0;
+  z-index: -1;
+}
+.pagination{
+  @include flex(center);
+  margin: 40px 0;
+  .page{
+    margin: 0 15px;
+    border: 1px solid #EEEEEE;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    transition: .5s ease;
+    cursor: pointer;
+    span{
+      font-weight: 700;
+      width: 40px;
+      text-align: center;
+    }
+    &:hover{
+      background: $red;
+      color: #fff;
+    }
+  }
+  .active{
+    background: $red;
+    color: #fff;
+  }
+}
+footer{
+  border-top: 1px solid #EEEEEE;
+}
+@media screen and (max-width: 992px){
+  .products{
+    flex-wrap: wrap;
+    .product{
+      flex: 1 1 100%;
+      // margin: 20px 0;
+    }
+  }
+}
