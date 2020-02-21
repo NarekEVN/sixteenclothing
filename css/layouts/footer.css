@@ -1,0 +1,18 @@
+footer {
+  min-height: 90px;
+  line-height: 90px;
+  text-align: center;
+  color: #7E7E7E;
+}
+
+footer a {
+  color: #F33F3F;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 590px) {
+  footer {
+    font-size: 17px;
+  }
+}
+/*# sourceMappingURL=footer.css.map */

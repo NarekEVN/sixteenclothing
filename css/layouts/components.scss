@@ -1,0 +1,50 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+section:not(#carousel){
+  padding-top: 60px;
+}
+.container{
+  max-width: 1170px;
+  margin: auto;
+  padding: 0 15px;
+}
+ul{
+  padding-inline-start: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+@mixin flex($justify, $align: center){
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+@mixin button($bg: #fff, $color: #000, $radius: 20px){
+  border: none;
+  background: $bg;
+  color: $color;
+  border-radius: $radius;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px){
+  .container{
+    max-width: auto;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px){
+  .container{
+    max-width: 750px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1200px){
+  .container{
+    max-width: 970px;
+  }
+}
+@media screen and (min-width: 1200px){
+  .container{
+    max-width: 1170px;
+  }
+}
