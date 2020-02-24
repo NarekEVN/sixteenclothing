@@ -12,7 +12,7 @@ $(document).ready(function(){
         dots: false,
         nav: true,
       },
-      500: {
+      770: {
         dots: true,
         nav: false,
       }
