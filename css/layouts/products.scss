@@ -144,3 +144,40 @@ footer{
     }
   }
 }
+
+@media screen and (max-width: 430px){
+  .bg{
+    .bg_text{
+      h1{
+        font-size: 40px;
+      }
+    }
+  }
+  .pagination{
+    flex-wrap: wrap;
+    .page{
+      width: 20px;
+      height: 20px;
+      line-height: 20px;
+      font-size: 15px;
+      span{
+        width: 20px;
+      }
+    }
+  }
+  .filter_title{
+    flex-wrap: wrap;
+    button{
+      margin: 10px 0;
+    }
+  }
+}
+@media screen and (max-width: 300px){
+  .bg{
+    .bg_text{
+      h1{
+        font-size: 20px;
+      }
+    }
+  }
+}

@@ -490,4 +490,36 @@ footer {
             flex: 1 1 100%;
   }
 }
+
+@media screen and (max-width: 430px) {
+  .bg .bg_text h1 {
+    font-size: 40px;
+  }
+  .pagination {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .pagination .page {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 15px;
+  }
+  .pagination .page span {
+    width: 20px;
+  }
+  .filter_title {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .filter_title button {
+    margin: 10px 0;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .bg .bg_text h1 {
+    font-size: 20px;
+  }
+}
 /*# sourceMappingURL=products.css.map */

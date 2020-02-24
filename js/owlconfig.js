@@ -6,6 +6,17 @@ $(document).ready(function(){
     autoplay: true,
     autoplayHoverPause: true,
     margin: 20,
+    responsiveClass:true,
+    responsive: {
+      0: {
+        dots: false,
+        nav: true,
+      },
+      500: {
+        dots: true,
+        nav: false,
+      }
+    }
   });
   $(".about_carousel").owlCarousel({
     items: 5,

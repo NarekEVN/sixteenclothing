@@ -251,3 +251,29 @@
     }
   }
 }
+
+@media screen and (max-width: 350px){
+  .bg{
+    .bg_text{
+      h4{
+        font-size: 18px;
+      }
+      h1{
+        font-size: 35px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 250px){
+  .bg{
+    .bg_text{
+      h4{
+        font-size: 15px;
+      }
+      h1{
+        font-size: 28px;
+      }
+    }
+  }
+}
