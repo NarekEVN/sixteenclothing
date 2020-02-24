@@ -91,11 +91,12 @@
   }
 }
 
-.active_filter{
+.product.active_filter{
   opacity: 1;
   position: static;
   transition: .2s ease;
   z-index: 2;
+  flex: 0 0 30%;
 }
 .disabled_item{
   transition: .2s ease;

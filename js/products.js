@@ -15,7 +15,7 @@ function doFilter(filter){
   product.forEach(function(item){
     if (filter === 'all'){
       item.classList.remove("disabled_item");
-      item.classList.add("active_filter");
+      item.classList.remove("active_filter");
     }
     else if (item.getAttribute("data-sort") !== filter && filter !== 'all'){
       item.classList.remove("active_filter");
