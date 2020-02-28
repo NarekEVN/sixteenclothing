@@ -67,6 +67,7 @@
     margin-top: 20px;
     border-top: 1px solid #EEEEEE;
     padding: 20px 0; 
+    @include flex(space-around);
     a{
       display: inline-block;
       text-decoration: none;
@@ -179,6 +180,18 @@
     }
     .accordion{
       width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 400px){
+  .block_info{
+    .social{
+      flex-wrap: wrap;
+      a{
+        flex: 1 1 30%;
+        margin: 15px;
+      }
     }
   }
 }

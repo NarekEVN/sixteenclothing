@@ -360,6 +360,14 @@ footer a {
   margin-top: 20px;
   border-top: 1px solid #EEEEEE;
   padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .block_info .social a {
@@ -499,6 +507,19 @@ footer a {
   }
   .block_info .accordion {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .block_info .social {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .block_info .social a {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 30%;
+            flex: 1 1 30%;
+    margin: 15px;
   }
 }
 /*# sourceMappingURL=contact.css.map */
