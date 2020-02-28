@@ -1,0 +1,184 @@
+@import 'nav', 'colors', 'footer';
+
+.bg{
+  background-image: url('../../img/contact-heading.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: 70%;
+  height: 450px;
+  width: 100%;
+  position: relative;
+  .bg_text{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    text-align: center;
+    h4{
+      font-size: 25px;
+      color: $red;
+    }
+    h1{
+      font-size: 55px;
+      color: #fff;
+      letter-spacing: 8px;
+      margin-top: -15px;
+    }
+  }
+}
+
+.block_title{
+  border-bottom: 1px solid #EEEEEE;
+  @include flex(space-between);
+  h3{
+    font-weight: 400;
+    font-size: 28px;
+  }
+  a{
+    font-size: 13px;
+    color: $red;
+    text-decoration: none;
+    font-weight: 700;
+    i{
+      font-size: 10px;
+      font-weight: 700;
+    }
+  }
+}
+
+.block_info {
+  @include flex(space-around);
+
+  h5{
+    color: $blue;
+  }
+  p{
+    color: $lightgray;
+    font-size: 14px;
+  }
+  iframe, .about{
+    margin: 0 25px;
+  }
+  .about{
+    width: 30%;
+  }
+  .social{
+    margin-top: 20px;
+    border-top: 1px solid #EEEEEE;
+    padding: 20px 0; 
+    a{
+      display: inline-block;
+      text-decoration: none;
+      color: $dark;
+      background: #EEEEEE;
+      width: 50px;
+      height: 50px;
+      font-size: 18px;
+      text-align: center;
+      line-height: 50px;
+      margin: 0 10px;
+      transition: .5s ease;
+      &:hover{
+        background: $red;
+        color: #EEEEEE;
+      }
+    }
+  }
+  a#title{
+    color: $red;
+  }
+  a{
+    color: $blue;
+    font-size: 18px;
+    transition: .5s ease;
+    text-decoration: none;
+    display: inline-block;
+    margin: 12px 0;
+    &:hover{
+      color: $red;
+    }
+  }
+  form{
+    input, textarea{
+      width: 100%;
+      box-sizing: border-box;
+      border: 1px solid #EEEEEE;
+      padding: 10px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 15px;
+      margin: 15px 0;
+      &::placeholder{
+        color: $lightgray;
+      }
+      &:focus{
+        outline: 0;
+      }
+    }
+    textarea{
+      min-height: 100px;
+      max-height: 200px;
+      resize: vertical;
+      width: 100%;
+    }
+    button{
+      @include button($red, #fff, 5px);
+      padding: 10px 20px;
+      font-size: 15px;
+      font-family: 'Poppins', serif;
+    }
+  }
+  form, .accordion{
+    margin: 0 25px;
+  }
+  .accordion{
+    width: 30%;
+  }
+}
+.about_carousel{
+  padding: 80px 0;
+  img{
+    transition: .3s ease;
+    cursor: pointer;
+    &:hover{
+      opacity: 0.6;
+    }
+  }
+}
+@media screen and (max-width: 350px){
+  .bg{
+    .bg_text{
+      h4{
+        font-size: 18px;
+      }
+      h1{
+        font-size: 35px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 250px){
+  .bg{
+    .bg_text{
+      h4{
+        font-size: 15px;
+      }
+      h1{
+        font-size: 28px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px){
+  .block_info{
+    flex-wrap: wrap;
+    .about{
+      width: 100%;
+    }
+    .accordion{
+      width: 100%;
+    }
+  }
+}
